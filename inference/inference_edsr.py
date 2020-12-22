@@ -14,12 +14,12 @@ def main():
         '--model_path',
         type=str,
         default=  # noqa: E251
-        'experiments/pretrained_models/ESRGAN/ESRGAN_SRx4_DF2KOST_official-ff704c30.pth'  # noqa: E501
+        'experiments/pretrained_models/EDSR/EDSR_Lx4_f256b32_DIV2K_300k_B16G1.pth'  # noqa: E501
     )
     parser.add_argument(
         '--folder',
         type=str,
-        default='datasets/Set14/LRbicx4',
+        default='datasets/dain_frames',
         help='input test image folder')
     args = parser.parse_args()
 
@@ -31,7 +31,7 @@ def main():
     model.eval()
     model = model.to(device)
 
-    os.makedirs('results/ESRGAN', exist_ok=True)
+    os.makedirs('results/edsr_frames', exist_ok=True)
     for idx, path in enumerate(
             sorted(glob.glob(os.path.join(args.folder, '*')))):
         imgname = os.path.splitext(os.path.basename(path))[0]
@@ -48,7 +48,7 @@ def main():
         output = output.data.squeeze().float().cpu().clamp_(0, 1).numpy()
         output = np.transpose(output[[2, 1, 0], :, :], (1, 2, 0))
         output = (output * 255.0).round().astype(np.uint8)
-        cv2.imwrite(f'results/ESRGAN/{imgname}_ESRGAN.png', output)
+        cv2.imwrite(f'results/edsr_frames/{imgname}.png', output)
 
 
 if __name__ == '__main__':
