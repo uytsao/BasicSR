@@ -83,21 +83,7 @@ if __name__ == '__main__':
             '1T8xbI-Tz8EeSg3gCmQBNqGjLP5l3Mv84'
         },
         'EDSR': {
-            """
-            'EDSR_Mx2_f64b16_DIV2K_official-3ba7b086.pth':
-            '1mREMGVDymId3NzIc2u90sl_X4-pb4ZcV',
-            'EDSR_Mx3_f64b16_DIV2K_official-6908f88a.pth':
-            '1EriqQqlIiRyPbrYGBbwr_FZzvb3iwqz5',
-            'EDSR_Mx4_f64b16_DIV2K_official-0c287733.pth':
-            '1bCK6cFYU01uJudLgUUe-jgx-tZ3ikOWn',
-            'EDSR_Lx2_f256b32_DIV2K_official-be38e77d.pth':
-            '15257lZCRZ0V6F9LzTyZFYbbPrqNjKyMU',
-            'EDSR_Lx3_f256b32_DIV2K_official-3660f70d.pth':
-            '18q_D434sLG_rAZeHGonAX8dkqjoyZ2su',
-            'EDSR_Lx4_f256b32_DIV2K_official-76ee1c8f.pth':
-            '1GCi30YYCzgMCcgheGWGusP9aWKOAy5vl'
-            """
-            '206_EDSR_Lx4_f256b32_DIV2K_300k_B16G1_204pretrain_wandb.pth':
+            'EDSR_Lx4_f256b32_DIV2K_300k_B16G1.pth':
             '18-F6CLkkxhA7dmydc-NQkC5L_19tL1eQ'
         },
         'DUF': {
