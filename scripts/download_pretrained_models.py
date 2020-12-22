@@ -83,6 +83,7 @@ if __name__ == '__main__':
             '1T8xbI-Tz8EeSg3gCmQBNqGjLP5l3Mv84'
         },
         'EDSR': {
+            """
             'EDSR_Mx2_f64b16_DIV2K_official-3ba7b086.pth':
             '1mREMGVDymId3NzIc2u90sl_X4-pb4ZcV',
             'EDSR_Mx3_f64b16_DIV2K_official-6908f88a.pth':
@@ -95,6 +96,9 @@ if __name__ == '__main__':
             '18q_D434sLG_rAZeHGonAX8dkqjoyZ2su',
             'EDSR_Lx4_f256b32_DIV2K_official-76ee1c8f.pth':
             '1GCi30YYCzgMCcgheGWGusP9aWKOAy5vl'
+            """
+            '206_EDSR_Lx4_f256b32_DIV2K_300k_B16G1_204pretrain_wandb.pth':
+            '18-F6CLkkxhA7dmydc-NQkC5L_19tL1eQ'
         },
         'DUF': {
             'DUF_x2_16L_official-39537cb9.pth':
