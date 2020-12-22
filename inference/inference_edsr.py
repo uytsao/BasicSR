@@ -26,8 +26,7 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # set up model
     model = EDSR(
-        num_in_ch=3, num_out_ch=3, num_feat=256, num_block=32, upscale=4, res_scale=0.1, \
-        img_range=255., rgb_mean=(0.4488, 0.4371, 0.4040))
+        num_in_ch=3, num_out_ch=3, num_feat=256, num_block=32, upscale=4, res_scale=0.1, img_range=255., rgb_mean=(0.4488, 0.4371, 0.4040))
     model.load_state_dict(torch.load(args.model_path)['params'], strict=True)
     model.eval()
     model = model.to(device)
